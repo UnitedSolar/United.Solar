@@ -4,102 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>United Solar and Engineering Solutions (SMC) PVT LTD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            border-bottom: #77c5d5 3px solid;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            max-height: 80px; /* Increase the logo size */
-            margin-right: 20px;
-        }
-        header .logo-container {
-            align-items: center;
-            display: flex;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        header nav {
-            display: flex;
-             margin-left: auto;     
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin: 0 15px;
-        }
-        .showcase {
-            background: url('image/showcase.jpg') no-repeat center center/cover;
-            min-height: 400px;
-            text-align: center;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .showcase h1 {
-            font-size: 55px;
-            margin: 0;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        section {
-            padding: 20px 0;
-        }
-        .box {
-            float: left;
-            width: 30%;
-            padding: 15px;
-            text-align: center;
-            margin: 1.66%;
-            background: #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .box img {
-            width: 100%;
-            height: auto;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        .column-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .column {
-            width: 48%;
-        }
-        .map-container {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -109,186 +15,24 @@
                 <h1>United Solar and Engineering Solutions (SMC) PVT LTD</h1>
             </div>
             <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#" onclick="loadContent('home')">Home</a>
+                <a href="#" onclick="loadContent('about')">About Us</a>
+                <a href="#" onclick="loadContent('services')">Services</a>
+                <a href="#" onclick="loadContent('projects')">Projects</a>
+                <a href="#" onclick="loadContent('contact')">Contact</a>
             </nav>
         </div>
     </header>
-    <section id="home" class="showcase">
-        <div class="container">
-            <h1>Welcome to United Solar</h1>
-            <p>Be United with us and Leading the way in solar and engineering solutions</p>
+    <main id="content">
+        <div id="home">
+            <section class="showcase">
+                <div class="container">
+                    <h1>Welcome to United Solar</h1>
+                    <p>Be United with us and Leading the way in solar and engineering solutions</p>
+                </div>
+            </section>
         </div>
-    </section>
-    <section id="about" class="container">
-        <h2>About Us</h2>
-        <p><strong>United Solar and Engineering Solutions (SMC) PVT LTD</strong>, established in 2015, is a premier best solar energy company based in Multan, Pakistan. We are dedicated to providing innovative and sustainable solar power solutions tailored to the needs of residential and commercial clients across the country. Our expertise lies in designing, installing, and maintaining custom solar power systems, ensuring our clients receive the most efficient and reliable energy solutions.</p>
-        
-        <h2>Our Services</h2>
-        <div class="services-column">
-            <h3>1. Residential Solar Systems</h3>
-            <ul>
-                <li>Custom-designed solar power systems for homes</li>
-                <li>Hybrid solar systems combining grid power and battery storage</li>
-                <li>On-grid solar systems connected to the public power grid</li>
-                <li>Off-grid solar systems for independent power generation</li>
-                <li>Elevated solar structures for optimal positioning</li>
-                <li>Solar panel cleaning and maintenance to ensure peak performance</li>
-            </ul>
-
-            <h3>2. Commercial Solar Systems</h3>
-            <ul>
-                <li>Tailored solar solutions for businesses of all sizes</li>
-                <li>Large-scale solar installations for commercial applications</li>
-                <li>Energy efficiency audits to maximize savings</li>
-                <li>Solar power solutions for industrial applications</li>
-                <li>Upgrades and expansions to existing solar systems</li>
-            </ul>
-
-            <h3>3. Solar System Design and Installation</h3>
-            <ul>
-                <li>Cutting-edge solar design services to meet your specific needs</li>
-                <li>Professional installation by certified technicians</li>
-                <li>Detailed site assessment and planning</li>
-                <li>Seamless integration with existing power systems</li>
-            </ul>
-
-            <h3>4. Solar System Maintenance and Repair</h3>
-            <ul>
-                <li>Routine inspections and performance checks</li>
-                <li>Comprehensive cleaning and maintenance of solar panels</li>
-                <li>Troubleshooting and repair services for all system components</li>
-                <li>Optimization of system performance for maximum efficiency</li>
-                <li>Maintenance of solar battery storage systems</li>
-            </ul>
-            </div>
-            <div class="services-column">
-            <h3>5. Hybrid Solar Systems</h3>
-            <ul>
-                <li>Advanced solutions combining grid and battery power</li>
-                <li>Ensuring energy efficiency and reliability</li>
-                <li>Customized hybrid solutions for varying energy demands</li>
-            </ul>
-            <h3>6. Solar Battery Storage Solutions</h3>
-            <ul>
-                <li>Reliable and efficient battery storage options</li>
-                <li>Integration with new and existing solar systems</li>
-                <li>Backup power solutions for uninterrupted energy</li>
-                <li>Comprehensive energy management and optimization</li>
-            </ul>
-
-            <h3>7. Elevated Solar Structures</h3>
-            <ul>
-                <li>Innovative designs for elevated solar installations</li>
-                <li>Space-efficient solutions for rooftops and open areas</li>
-                <li>Optimal positioning for enhanced solar performance</li>
-                <li>Durable and aesthetically pleasing structures</li>
-            </ul>
-
-            <h3>8. Energy Consulting and Auditing</h3>
-            <ul>
-                <li>In-depth energy audits for homes and businesses</li>
-                <li>Expert advice on energy efficiency and conservation</li>
-                <li>Customized energy solutions for maximum cost savings</li>
-                <li>Feasibility studies for potential solar projects</li>
-            </ul>
-
-            <h3>9. Solar System Upgrades and Expansion</h3>
-            <ul>
-                <li>Enhancing existing solar systems for better performance</li>
-                <li>Expanding system capacity to meet growing energy needs</li>
-                <li>Integration of the latest solar technologies and components</li>
-            </ul>
-        </div>
-        
-        </section>
-    <section class="commitment-section">
-        <div class="container">
-            <h2>Our Commitment</h2>
-            <p>At United Solar and Engineering Solutions, our mission is to deliver high-quality, sustainable energy solutions that cater to the unique needs of each client. Our team of experienced professionals is dedicated to providing exceptional service, from the initial consultation to the final installation and ongoing maintenance. We are passionate about helping you harness the power of the sun to achieve energy independence and reduce your carbon footprint.</p>
-            <p>Contact us today to learn more about our services and how we can help you transition to clean, renewable energy. Trust United Solar and Engineering Solutions for all your solar energy needs.</p>
-        </div>
-    </section>
-    </section>
-    <section id="services" class="container">
-        <h2>Our Services</h2>
-        <div class="box">
-            <img src="image/solar-panel.jpg" alt="United Solar and Engineering Solutions (SMC) PVT LT">
-            <h3>Solar Panel Installation</h3>
-            <p>We offer professional solar panel installation services to ensure optimal energy efficiency for your home or business.</p>
-        </div>
-        <div class="box">
-            <img src="image/renewable-energy.jpg" alt="Best Solar Company">
-            <h3>Renewable Energy Consulting</h3>
-            <p>Our experts provide consulting services to help you choose the best renewable energy solutions for your needs.</p>
-        </div>
-        <div class="box">
-            <img src="image/engineering.jpg" alt="Solar Panel">
-            <h3>Engineering Solutions</h3>
-            <p>We offer a range of engineering solutions to support your projects from concept to completion.</p>
-        </div>
-    </section>
-    <section id="projects" class="container">
-        <h2>Our Projects</h2>
-        <p>Here are some of the projects we have successfully completed:</p>
-        <div class="box">
-            <img src="image/project1.jpg" alt="Inverter">
-            <h3>Project 1: Solar Power Installation for Cotton Factory</h3>
-            <div class="project-details">
-                <p>Location: Lahore, Pakistan</p>
-                <p>Completed: March 2023</p>
-                <ul>
-                    <li>Installed a 500 kW on-grid solar power system</li>
-                    <li>Integrated battery storage for backup power</li>
-                    <li>Annual energy savings of 30%</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/project2.jpg" alt="Green Meter">
-            <h3>Project 2: Residential Solar Setup for Roayal Orsharad Housing Society</h3>
-            <div class="project-details">
-                <p>Location: Multan, Pakistan</p>
-                <p>Completed: January 2024</p>
-                <ul>
-                    <li>Installed 200 hybrid solar systems</li>
-                    <li>Each system equipped with battery storage</li>
-                    <li>Reduced dependency on grid power by 50%</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/project3.jpg" alt="Multan">
-            <h3>Project 3: Solar Park for Taxtiel Industrial Estate</h3>
-            <div class="project-details">
-                <p>Location: Faisalabad, Pakistan</p>
-                <p>Completed: November 2021</p>
-                <ul>
-                    <li>Designed and installed a 1 MW solar park</li>
-                    <li>Provides clean energy to multiple industrial units</li>
-                    <li>Contributes to significant carbon footprint reduction</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us for any inquiries or further information.</p>
-        <p>Email: United.Solar@hotmail.com</p>
-        <p>Phone: 
-            <ul>
-                <li>03006361727</li>
-                <li>03101721727</li>
-            </ul>
-        </p>
-        <p>Address: 34-F, T Chowk Shah Ruken-e-Alam Colony Multan</p>
-        <div class="map-container">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1724.304552453!2d71.50183789839478!3d30.191158299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b37116bbee07b%3A0x9a88131f1c61f904!2sUNITED%20SOLAR%20AND%20ENGINEERING%20SOLUTIONS%20(SMC)%20PVT%20LTD!5e0!3m2!1sen!2s!4v1716545723467!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
+    </main>
     <footer>
         <p>&copy; 2024 United Solar and Engineering Solutions (SMC) PVT LTD. All Rights Reserved.</p>
     </footer>
