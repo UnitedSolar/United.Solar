@@ -39,7 +39,7 @@ header h1 {
 
 header nav {
     display: flex;
-    margin-right: auto;     
+    margin-right: 20px;     
 }
 
 header nav a {
