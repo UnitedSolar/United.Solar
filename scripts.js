@@ -12,6 +12,10 @@ function loadContent(section) {
                             <p>Be United with us and Leading the way in solar and engineering solutions</p>
                         </div>
                     </section>
+                    <div class="container">
+                    <h2>About Us</h2>
+                    <p><strong>United Solar and Engineering Solutions (SMC) PVT LTD</strong>, established in 2015, is a premier best solar energy company based in Multan, Pakistan. We are dedicated to providing innovative and sustainable solar power solutions tailored to the needs of residential and commercial clients across the country. Our expertise lies in designing, installing, and maintaining custom solar power systems, ensuring our clients receive the most efficient and reliable energy solutions.</p>
+                </div>
                 </div>`;
             break;
         case 'about':
