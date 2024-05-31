@@ -11,14 +11,14 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="image/logo.png" alt="United Solar Logo">
+                <img src="images/logo.png" alt="United Solar Logo">
                 <h1>United Solar and Engineering Solutions (SMC) PVT LTD</h1>
             </div>
             <nav>
                 <a href="#" onclick="loadContent('home')">Home</a>
-                 <a href="#" onclick="loadContent('services')">Services</a>
+                <a href="#" onclick="loadContent('services')">Services</a>
                 <a href="#" onclick="loadContent('projects')">Projects</a>
-                <a href="#" onclick="loadContent('Download')">Download</a>  
+                <a href="#" onclick="loadContent('download')">Download</a>
                 <a href="#" onclick="loadContent('contact')">Contact</a>
             </nav>
         </div>
@@ -32,13 +32,76 @@
                 </div>
             </section>
         </div>
-                <div class="container">
-                    <h2>About Us</h2>
-                    <p><strong>United Solar and Engineering Solutions (SMC) PVT LTD</strong>, established in 2015, is a premier best solar energy company based in Multan, Pakistan. We are dedicated to providing innovative and sustainable solar power solutions tailored to the needs of residential and commercial clients across the country. Our expertise lies in designing, installing, and maintaining custom solar power systems, ensuring our clients receive the most efficient and reliable energy solutions.</p>
-                </div>
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>United Solar and Engineering Solutions (SMC) PVT LTD</strong>, established in 2015, is a premier solar energy company based in Multan, Pakistan. We are dedicated to providing innovative and sustainable solar power solutions tailored to the needs of residential and commercial clients across the country. Our expertise lies in designing, installing, and maintaining custom solar power systems, ensuring our clients receive the most efficient and reliable energy solutions.</p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 United Solar and Engineering Solutions (SMC) PVT LTD. All Rights Reserved.</p>
     </footer>
+    <script>
+        function loadContent(section) {
+            const content = document.getElementById('content');
+            content.innerHTML = '';
+
+            switch (section) {
+                case 'home':
+                    content.innerHTML = `
+                        <div id="home">
+                            <section class="showcase">
+                                <div class="container">
+                                    <h1>Welcome to United Solar</h1>
+                                    <p>Be United with us and Leading the way in solar and engineering solutions</p>
+                                </div>
+                            </section>
+                            <div class="container">
+                                <h2>About Us</h2>
+                                <p><strong>United Solar and Engineering Solutions (SMC) PVT LTD</strong>, established in 2015, is a premier solar energy company based in Multan, Pakistan. We are dedicated to providing innovative and sustainable solar power solutions tailored to the needs of residential and commercial clients across the country. Our expertise lies in designing, installing, and maintaining custom solar power systems, ensuring our clients receive the most efficient and reliable energy solutions.</p>
+                            </div>
+                        </div>`;
+                    break;
+                case 'contact':
+                    content.innerHTML = `
+                        <section id="contact" class="container contact-container">
+                            <div class="contact-details">
+                                <h2>Contact Us</h2>
+                                <p>If you have any questions or would like to learn more about our services, please feel free to contact us:</p>
+                                <p>Email: united.Solar@hotmail.com</p>
+                                <p>Phone: 
+                                    <ul>
+                                        <li>03006361727</li>
+                                        <li>03101721727</li>
+                                    </ul>
+                                </p>
+                                <p>Address: 34-F, T Chowk Shah Ruken-e-Alam Colony Multan</p>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1724.304552453!2d71.50183789839478!3d30.191158299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b37116bbee07b%3A0x9a88131f1c61f904!2sUNITED%20SOLAR%20AND%20ENGINEERING%20SOLUTIONS%20(SMC)%20PVT%20LTD!5e0!3m2!1sen!2s!4v1716545723467!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="contact-form">
+                                <h3>Send us a message</h3>
+                                <form id="contactForm" action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT" method="POST">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                    
+                                    <label for="contact">Contact No.:</label>
+                                    <input type="text" id="contact" name="contact" required>
+                                    
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address">
+                                    
+                                    <label for="requirements">Requirements:</label>
+                                    <textarea id="requirements" name="requirements" rows="4" required></textarea>
+                                    
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </section>`;
+                    break;
+                // Add other sections as needed...
+            }
+        }
+    </script>
 </body>
 </html>
